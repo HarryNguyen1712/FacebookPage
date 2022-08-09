@@ -1,0 +1,172 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 22, 2021, 11:01:21 AM
+    Author     : speed
+*/
+html{
+    background: url('../images/89125.png');
+    background-size: 100% 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin:0;
+}
+input{
+    padding:10px;
+    outline:none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    height:150px;
+    color:white;
+}
+header a{
+    color:white;
+}
+#mainpage{
+    display: flex;
+    padding-left: 6em;
+    align-items: center;
+}
+#mainpage a{
+    display:block;
+    background-color: #4267B2;
+    border: 2px solid #4267B2;
+    border-radius: 30px;
+    padding:0.2em 1em;
+}
+#mainpage,#login{
+    float: left;
+    width: 50%;
+    height: 100px;
+}
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4267B2;
+    border:2px solid #4267B2;
+    border-radius: 50px 0px 0px 50px;
+}
+#login input{
+    height:30px;
+        border: 2px solid transparent;
+    border-radius: 20px;
+}
+#login section,#login input{
+    float:left;
+}
+#login section{
+    margin-left: 5%
+}
+#login>input{
+    padding:0 0.5em;
+    background-color: #4169E1;
+    color: white;
+}
+#login input, #login label,#login a{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "aside section"
+}
+#aside{grid-area: aside;}
+#section{grid-area: section;}
+#aside h2,#aside h3{
+    margin-bottom: 3em;
+}
+#aside{
+    padding: 20px
+}
+#aside img{
+    vertical-align: middle;
+    
+}
+#section{
+    margin-left: 6em;
+    margin-right: 16em;
+}
+#section{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 40px 40px 40px 40px 100px 40px 55px 50px; 
+    grid-template-areas: 
+        "signup signup"
+        "fname  lname"
+        "mail   mail"
+        "retype retype"
+            
+        "pass   pass"
+        "birthday birthday"
+        "sex sex"
+        "term term"
+        "button button"
+}
+section input{
+    height: 40px;
+}
+main input, main select{
+    outline: none;
+    border:2px solid #898F9C;
+    border-radius: 20px;
+}
+#text{grid-area: text;display: none;}
+#retypemailphone{grid-area: retype;}
+#signup{grid-area: signup;font-size: 200%;font-weight: bolder;}
+#fname{grid-area: fname}
+#lname{grid-area: lname}
+#mailphone{grid-area: mail}
+#newpass{grid-area:pass}
+#birthday{grid-area: birthday}
+#sex{grid-area: sex}
+#term{grid-area: term}
+#button{grid-area: button}
+#birthday select{
+    padding: 5px;
+}
+
+#sex{
+    font-size:150%
+}
+#female{
+    margin-left: 5em
+}
+#sex input{
+    height:auto;
+    
+}
+#sex input,#sex label{
+    margin-top: 1em
+}
+#button1{
+    padding:0 1.5em;
+    border:2px solid transparent;
+    border-radius: 20px;
+    background-color: #04b372;
+    font-size: 120%;
+}   
+footer{
+    background-color: white;
+    height: 30px;
+    display:flex;
+    align-items: center;
+    border-top: 2px #898F9C solid;
+    border-bottom: 2px #4267B2 solid;
+}
+footer li{
+    display: inline-block;
+    margin-right: 3em;
+}
